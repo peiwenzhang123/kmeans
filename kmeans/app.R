@@ -30,7 +30,8 @@ ui <- fluidPage(
                   label = "Choose a value for k, the number of clusters: ",
                   min = 2, max = 8, value = 3)),
     
-    p("This shiny app is made for the final project of Stat041. Complete code and datasets can be found", shiny::a("here", href = "https://github.com/peiwenzhang123/kmeans/tree/master/App", "."),
+    p("This shiny app is made for the final project of Stat041 - complete code and datasets can be found", 
+      shiny::a("here", href = "https://github.com/peiwenzhang123/kmeans/tree/master/kmeans"),
     
     # Output graph
     mainPanel(
