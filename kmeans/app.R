@@ -28,10 +28,11 @@ ui <- fluidPage(
       # Allow user to choose k
       sliderInput(inputId = "kval", 
                   label = "Choose a value for k, the number of clusters: ",
-                  min = 2, max = 5, value = 3)),
+                  min = 2, max = 5, value = 3),
     
-    p("This shiny app is made for the final project of Stat041 - complete code and datasets can be found", 
-      shiny::a("here", href = "https://github.com/peiwenzhang123/kmeans/tree/master/kmeans"),
+      p("This shiny app is made for the final project of Stat041. Complete code and datasets can be found", 
+      shiny::a("here", href = "https://github.com/peiwenzhang123/kmeans/tree/master/kmeans"), ".")
+    ),
     
     # Output graph
     mainPanel(
@@ -42,7 +43,6 @@ ui <- fluidPage(
    )
   )
  )
-)
 
 ### Server Side ###
 server <- function(input, output){
